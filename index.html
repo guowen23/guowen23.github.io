@@ -165,6 +165,63 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/01/%E8%80%83%E7%A0%94%E8%AE%A1%E5%88%92%E4%B9%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="guow">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GW`s Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/01/%E8%80%83%E7%A0%94%E8%AE%A1%E5%88%92%E4%B9%A6/" class="post-title-link" itemprop="url">考研计划书</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-01 15:16:00" itemprop="dateCreated datePublished" datetime="2020-09-01T15:16:00+08:00">2020-09-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/31/C-%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -302,10 +359,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-08-30 23:22:30 / 修改时间：23:25:19" itemprop="dateCreated datePublished" datetime="2020-08-30T23:22:30+08:00">2020-08-30</time>
+              <time title="创建时间：2020-08-30 23:22:30" itemprop="dateCreated datePublished" datetime="2020-08-30T23:22:30+08:00">2020-08-30</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-31 17:38:28" itemprop="dateModified" datetime="2020-08-31T17:38:28+08:00">2020-08-31</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -339,6 +402,7 @@
 <p>在系统变量Path中，添加%MAVEN_HOME%\bin<br><img src="./1596777841575.png" alt="Alt text"></p>
 <p>3、验证maven环境配置是否成功<br>打开cmd控制台，输入命令：mvn -v<br><img src="./1596777239847.png" alt="Alt text"></p>
 <p>4、修改相关包的下载源与仓库位置<br>打开maven解压文件下的conf文件，找到配置文件Settings.xml文件。<br>周到如下图所示的字段<br><img src="./1596777356451.png" alt="Alt text"><br><img src="./1596777374042.png" alt="Alt text"></p>
+<p><strong>IDEA破解配置</strong></p>
 <p><strong>IDEA配置</strong><br>1、打开IDEA进行配置<br>打开IDEA编辑器，打开File-&gt;settings-&gt;Build Tools-&gt;Maven，将以下配置按照信息修改</p>
 <p>2、开始编写第一个JAVA程序<br>首先，new-&gt;Project，新建一个项目。并选择maven以及JDK，一直Next下去<br><img src="./1596777619869.png" alt="Alt text"><br>（可以检查一下，File-&gt;settings-&gt;Build-&gt;Build Tools-&gt;Maven，查看项目的环境是否正确，否的话，要将你的环境设置为默认环境）<br>然后找到java文件夹，新建一个HelloWorld类，编写一个输出Hello World。<br><img src="./1596777717538.png" alt="Alt text"></p>
 <blockquote>
@@ -373,7 +437,7 @@
 <blockquote>
 <p>PS：如果忘了Git密码，放弃如何修改，选择删除后重新创建一个新的SSH密钥吧。据调查Git为了保证安全并没有重新修改密码的功能</p>
 </blockquote>
-<p>1、首页：查看本地是否有.ssh文件<br>找到 Git Bash 打开后 运行 cd ~/.ssh 查看是否有该文件<br>如果本地有ssh密钥的话会有id_rsa、id_rsa.pub、known_hosts等文件。<br>如果没有的话运行上步骤命令就会找不到文件的提示<br>2、也可以删除ssh<br>复制并运行 rm -rf ~/.ssh/* 把现有的ssh key都删掉，这句命令行如果你多打一个空格，可能就要重装系统了，建议复制运行。<br>3、运行 ssh-keygen -t rsa -b 4096 -C “你的邮箱” ，注意填写你的真实邮箱。<br>4、按回车三次<br>5、运行 cat ~/.ssh/id_rsa.pub ，得到一串东西，完整的复制这串东西<br>6、打开GitHub-&gt;点击头像-&gt;setting-&gt;SSH adn GPG keys-&gt;New SSh key<br>7、输入你的title、把刚才复制的那段粘贴到key中保存<br>8、运行 ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;</a> ，你可能会看到这样的提示。<br>9、输入yse<br>10、然后如果你看到 Permission denied (publickey). 就说明你失败了，请回到第 1 步重来，是的，回到第 1步重来；<br>如果你看到 Hi FrankFang! You’ve successfully authenticated, but GitHub does not provide shell access.<br>那就说明你成功了</p>
+<p>1、首页：查看本地是否有.ssh文件<br>找到 Git Bash 打开后 运行 cd ~/.ssh 查看是否有该文件<br>如果本地有ssh密钥的话会有id_rsa、id_rsa.pub、known_hosts等文件。<br>如果没有的话运行上步骤命令就会找不到文件的提示<br>2、也可以删除ssh<br>复制并运行 rm -rf ~/.ssh/* 把现有的ssh key都删掉，这句命令行如果你多打一个空格，可能就要重装系统了，建议复制运行。<br>3、运行 ssh-keygen -t rsa -b 4096 -C “你的邮箱” ，注意填写你的真实邮箱。<br>4、按回车三次<br>5、运行 cat ~/.ssh/id_rsa.pub ，得到一串东西，完整的复制这串东西<br>6、打开GitHub-&gt;点击头像-&gt;setting-&gt;SSH adn GPG keys-&gt;New SSh key<br>7、输入你的title、把刚才复制的那段粘贴到key中保存<br>8、运行 ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;">&#x67;&#105;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#117;&#98;&#46;&#99;&#x6f;&#x6d;</a> ，你可能会看到这样的提示。<br>9、输入yse<br>10、然后如果你看到 Permission denied (publickey). 就说明你失败了，请回到第 1 步重来，是的，回到第 1步重来；<br>如果你看到 Hi FrankFang! You’ve successfully authenticated, but GitHub does not provide shell access.<br>那就说明你成功了</p>
 <blockquote>
 <p>深拷贝与浅拷贝的区别详解</p>
 </blockquote>
@@ -688,7 +752,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
